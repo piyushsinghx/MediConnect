@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 310" width="100%" height="100%">
+  <rect width="850" height="310" fill="#0d1117" rx="8" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="0" y="0" width="850" height="38" fill="#161b22" rx="8"/>
+  <text x="25" y="24" font-family="monospace" font-size="12" fill="#c9d1d9">backend/src/controllers/doctorController.js (getDoctors Multi-Field Search)</text>
+
+  <rect x="0" y="38" width="850" height="24" fill="#30363d" opacity="0.3"/>
+  <text x="25" y="54" font-family="monospace" font-size="11" fill="#8b949e">@@ -15,10 +15,20 @@ exports.getDoctors = async (req, res) => {</text>
+
+  <rect x="0" y="65" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="80" font-family="monospace" font-size="11" fill="#3fb950">+ if (search) {</text>
+
+  <rect x="0" y="87" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="102" font-family="monospace" font-size="11" fill="#3fb950">+   const matchingUsers = await User.find({ name: { $regex: search, $options: 'i' } }).select('_id');</text>
+
+  <rect x="0" y="109" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="124" font-family="monospace" font-size="11" fill="#3fb950">+   const userIds = matchingUsers.map(u =&gt; u._id);</text>
+
+  <rect x="0" y="131" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="146" font-family="monospace" font-size="11" fill="#3fb950">+   query.$or = [</text>
+
+  <rect x="0" y="153" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="168" font-family="monospace" font-size="11" fill="#3fb950">+     { user: { $in: userIds } },</text>
+
+  <rect x="0" y="175" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="190" font-family="monospace" font-size="11" fill="#3fb950">+     { specialization: { $regex: search, $options: 'i' } },</text>
+
+  <rect x="0" y="197" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="212" font-family="monospace" font-size="11" fill="#3fb950">+     { hospital: { $regex: search, $options: 'i' } },</text>
+
+  <rect x="0" y="219" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="234" font-family="monospace" font-size="11" fill="#3fb950">+     { bio: { $regex: search, $options: 'i' } }</text>
+
+  <rect x="0" y="241" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="256" font-family="monospace" font-size="11" fill="#3fb950">+   ];</text>
+
+  <rect x="0" y="263" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="278" font-family="monospace" font-size="11" fill="#3fb950">+ }</text>
+</svg>

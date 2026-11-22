@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="100%" height="100%">
+  <rect width="900" height="400" fill="#0d1117" rx="8" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="0" y="0" width="900" height="50" fill="#161b22" rx="8"/>
+  <text x="30" y="32" font-family="-apple-system,sans-serif" font-size="16" font-weight="700" fill="#c9d1d9">Consolidated Open-Source Pull Requests — piyushsinghx/MediConnect</text>
+
+  <!-- Row 1 -->
+  <g transform="translate(25, 70)">
+    <rect width="850" height="50" fill="#161b22" rx="6" stroke="#30363d"/>
+    <rect x="15" y="12" width="70" height="25" fill="#8957e5" rx="12"/>
+    <text x="50" y="29" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Merged</text>
+    <text x="100" y="25" font-family="sans-serif" font-size="13" font-weight="600" fill="#c9d1d9">PR #30: Allow patients to cancel appointments and enforce RBAC</text>
+    <text x="100" y="40" font-family="sans-serif" font-size="11" fill="#8b949e">Branch: fix/patient-appointment-cancellation | Merge Commit: 3d7199e</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(25, 130)">
+    <rect width="850" height="50" fill="#161b22" rx="6" stroke="#30363d"/>
+    <rect x="15" y="12" width="70" height="25" fill="#8957e5" rx="12"/>
+    <text x="50" y="29" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Merged</text>
+    <text x="100" y="25" font-family="sans-serif" font-size="13" font-weight="600" fill="#c9d1d9">PR #33: Implement multi-field search and enhance doctor search UX</text>
+    <text x="100" y="40" font-family="sans-serif" font-size="11" fill="#8b949e">Branch: fix/doctor-search-query | Merge Commit: 06117d8</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g transform="translate(25, 190)">
+    <rect width="850" height="50" fill="#161b22" rx="6" stroke="#30363d"/>
+    <rect x="15" y="12" width="70" height="25" fill="#8957e5" rx="12"/>
+    <text x="50" y="29" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Merged</text>
+    <text x="100" y="25" font-family="sans-serif" font-size="13" font-weight="600" fill="#c9d1d9">PR #34: Prevent privilege escalation in registration and enforce isActive</text>
+    <text x="100" y="40" font-family="sans-serif" font-size="11" fill="#8b949e">Branch: security/privilege-escalation-and-auth-checks | Merge Commit: 5bad584</text>
+  </g>
+
+  <!-- Row 4 -->
+  <g transform="translate(25, 250)">
+    <rect width="850" height="50" fill="#161b22" rx="6" stroke="#30363d"/>
+    <rect x="15" y="12" width="70" height="25" fill="#8957e5" rx="12"/>
+    <text x="50" y="29" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Merged</text>
+    <text x="100" y="25" font-family="sans-serif" font-size="13" font-weight="600" fill="#c9d1d9">PR #37: Dynamic date-specific slot availability &amp; prevent double bookings</text>
+    <text x="100" y="40" font-family="sans-serif" font-size="11" fill="#8b949e">Branch: feat/date-specific-slot-availability | Merge Commit: 5cad419</text>
+  </g>
+
+  <!-- Row 5 -->
+  <g transform="translate(25, 310)">
+    <rect width="850" height="50" fill="#161b22" rx="6" stroke="#30363d"/>
+    <rect x="15" y="12" width="70" height="25" fill="#238636" rx="12"/>
+    <text x="50" y="29" font-family="sans-serif" font-size="12" font-weight="700" fill="#fff" text-anchor="middle">Open</text>
+    <text x="100" y="25" font-family="sans-serif" font-size="13" font-weight="600" fill="#c9d1d9">PR #38: Implement patient rating and review system for completed appointments</text>
+    <text x="100" y="40" font-family="sans-serif" font-size="11" fill="#8b949e">Branch: feat/patient-reviews-system | Head Commit: 26a696b (Conflict Resolved)</text>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 360" width="100%" height="100%">
+  <rect width="850" height="360" fill="#0d1117" rx="8" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="25" y="25" width="800" height="70" fill="#161b22" rx="6" stroke="#30363d"/>
+  
+  <rect x="40" y="42" width="75" height="28" fill="#8957e5" rx="14"/>
+  <text x="77" y="61" font-family="-apple-system,sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">Merged</text>
+  
+  <text x="130" y="55" font-family="-apple-system,sans-serif" font-size="17" font-weight="600" fill="#c9d1d9">fix(doctors): implement multi-field search and enhance doctor search UX</text>
+  <text x="735" y="55" font-family="-apple-system,sans-serif" font-size="17" font-weight="400" fill="#8b949e">#33</text>
+  <text x="130" y="78" font-family="-apple-system,sans-serif" font-size="13" fill="#8b949e">piyushsinghx merged 1 commit into <tspan fill="#58a6ff">Avnish-Bhakhar:main</tspan> from <tspan fill="#58a6ff">piyushsinghx:fix/doctor-search-query</tspan></text>
+
+  <!-- Merge details banner -->
+  <rect x="25" y="110" width="800" height="95" fill="#161b22" rx="6" stroke="#30363d"/>
+  <circle cx="55" cy="140" r="14" fill="#8957e5"/>
+  <text x="55" y="146" font-family="-apple-system,sans-serif" font-size="16" fill="#fff" text-anchor="middle">✓</text>
+  <text x="80" y="142" font-family="-apple-system,sans-serif" font-size="14" font-weight="600" fill="#c9d1d9">Pull request successfully merged and closed</text>
+  <text x="80" y="165" font-family="-apple-system,sans-serif" font-size="12" fill="#8b949e">Merged into upstream/main via commit <tspan font-family="monospace" fill="#58a6ff">06117d8</tspan> • 2 files changed (+63, -11)</text>
+
+  <!-- Diff preview box -->
+  <rect x="25" y="220" width="800" height="115" fill="#161b22" rx="6" stroke="#30363d"/>
+  <text x="45" y="248" font-family="-apple-system,sans-serif" font-size="13" font-weight="600" fill="#58a6ff">Files changed in Pull Request #33:</text>
+  <text x="45" y="278" font-family="monospace" font-size="12" fill="#7ee787">✓ backend/src/controllers/doctorController.js  <tspan fill="#8b949e">| Multi-field regex query across name, spec, hospital</tspan></text>
+  <text x="45" y="308" font-family="monospace" font-size="12" fill="#7ee787">✓ frontend/src/app/doctors/page.tsx            <tspan fill="#8b949e">| Controlled search input and instant 'Clear Search' button</tspan></text>
+</svg>

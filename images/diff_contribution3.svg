@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 280" width="100%" height="100%">
+  <rect width="850" height="280" fill="#0d1117" rx="8" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="0" y="0" width="850" height="38" fill="#161b22" rx="8"/>
+  <text x="25" y="24" font-family="monospace" font-size="12" fill="#c9d1d9">backend/src/controllers/authController.js (Registration Role Guard)</text>
+
+  <rect x="0" y="38" width="850" height="24" fill="#30363d" opacity="0.3"/>
+  <text x="25" y="54" font-family="monospace" font-size="11" fill="#8b949e">@@ -25,6 +25,14 @@ exports.register = async (req, res) => {</text>
+
+  <rect x="0" y="65" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="80" font-family="monospace" font-size="11" fill="#3fb950">+ // Prevent privilege escalation: Only 'patient' or 'doctor' self-registration allowed</text>
+
+  <rect x="0" y="87" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="102" font-family="monospace" font-size="11" fill="#3fb950">+ const allowedRoles = ['patient', 'doctor'];</text>
+
+  <rect x="0" y="109" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="124" font-family="monospace" font-size="11" fill="#3fb950">+ const userRole = role &amp;&amp; allowedRoles.includes(role) ? role : 'patient';</text>
+
+  <rect x="0" y="131" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="146" font-family="monospace" font-size="11" fill="#3fb950">+ if (role &amp;&amp; !allowedRoles.includes(role)) {</text>
+
+  <rect x="0" y="153" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="168" font-family="monospace" font-size="11" fill="#3fb950">+   return res.status(403).json({ message: 'Registration with this role is not permitted' });</text>
+
+  <rect x="0" y="175" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="190" font-family="monospace" font-size="11" fill="#3fb950">+ }</text>
+</svg>

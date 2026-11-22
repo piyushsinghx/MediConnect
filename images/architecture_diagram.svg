@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="900" height="480" fill="url(#grad1)" rx="12"/>
+  <rect x="2" y="2" width="896" height="476" fill="none" stroke="#30363d" stroke-width="2" rx="10"/>
+
+  <text x="450" y="45" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="22" font-weight="700" fill="#58a6ff" text-anchor="middle">MediConnect System Architecture &amp; Component Flow</text>
+  <text x="450" y="70" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif" font-size="13" fill="#8b949e" text-anchor="middle">Full-Stack Healthcare Telemedicine &amp; Appointment Scheduling Platform</text>
+
+  <!-- Frontend Box -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="105" width="230" height="330" fill="#161b22" stroke="#388bfd" stroke-width="2" rx="8"/>
+    <rect x="50" y="105" width="230" height="38" fill="#1f6feb" rx="8" style="border-bottom-left-radius:0;border-bottom-right-radius:0;"/>
+    <text x="165" y="130" font-family="-apple-system,sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">Frontend (Next.js 14 / React 18)</text>
+
+    <!-- Components -->
+    <rect x="65" y="155" width="200" height="44" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="165" y="175" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">App Router Client Pages</text>
+    <text x="165" y="190" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">/appointments, /doctors, /doctors/[id]</text>
+
+    <rect x="65" y="210" width="200" height="44" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="165" y="230" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Custom React State &amp; Hooks</text>
+    <text x="165" y="245" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">useState, useEffect, Controlled Forms</text>
+
+    <rect x="65" y="265" width="200" height="44" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="165" y="285" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Interactive Modals &amp; Views</text>
+    <text x="165" y="300" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">ReviewModal, ChatModal, SlotPicker</text>
+
+    <rect x="65" y="320" width="200" height="44" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="165" y="340" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Auth &amp; Network Layer</text>
+    <text x="165" y="355" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Axios Interceptors, JWT, ProtectedRoute</text>
+
+    <rect x="65" y="375" width="200" height="44" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="165" y="395" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">TypeScript Declarations</text>
+    <text x="165" y="410" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">User, Doctor, Appointment, Review</text>
+  </g>
+
+  <!-- Connectors Frontend to Backend -->
+  <line x1="280" y1="230" x2="335" y2="230" stroke="#58a6ff" stroke-width="2" stroke-dasharray="4"/>
+  <polygon points="335,225 345,230 335,235" fill="#58a6ff"/>
+  <text x="312" y="220" font-family="-apple-system,sans-serif" font-size="10" fill="#58a6ff" text-anchor="middle">REST APIs</text>
+
+  <line x1="280" y1="300" x2="335" y2="300" stroke="#7ee787" stroke-width="2" stroke-dasharray="4"/>
+  <polygon points="335,295 345,300 335,305" fill="#7ee787"/>
+  <text x="312" y="290" font-family="-apple-system,sans-serif" font-size="10" fill="#7ee787" text-anchor="middle">Socket.io</text>
+
+  <!-- Backend Box -->
+  <g filter="url(#shadow)">
+    <rect x="345" y="105" width="240" height="330" fill="#161b22" stroke="#238636" stroke-width="2" rx="8"/>
+    <rect x="345" y="105" width="240" height="38" fill="#238636" rx="8"/>
+    <text x="465" y="130" font-family="-apple-system,sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">Backend (Node.js / Express)</text>
+
+    <rect x="360" y="155" width="210" height="44" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="465" y="175" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Auth &amp; RBAC Middleware</text>
+    <text x="465" y="190" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">protect, roleCheck, isActive verification</text>
+
+    <rect x="360" y="210" width="210" height="44" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="465" y="230" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Appointments Controller</text>
+    <text x="465" y="245" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Patient Cancellation &amp; Concurrency Guard</text>
+
+    <rect x="360" y="265" width="210" height="44" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="465" y="285" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Doctors Controller &amp; Search</text>
+    <text x="465" y="300" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Multi-field search &amp; UTC Available Slots</text>
+
+    <rect x="360" y="320" width="210" height="44" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="465" y="340" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Review Controller</text>
+    <text x="465" y="355" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Rating calculation &amp; Single-review rule</text>
+
+    <rect x="360" y="375" width="210" height="44" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="465" y="395" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Real-Time Chat Handlers</text>
+    <text x="465" y="410" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">Socket connection &amp; active-state guard</text>
+  </g>
+
+  <!-- Connectors Backend to Database -->
+  <line x1="585" y1="270" x2="640" y2="270" stroke="#f0883e" stroke-width="2" stroke-dasharray="4"/>
+  <polygon points="640,265 650,270 640,275" fill="#f0883e"/>
+  <text x="617" y="260" font-family="-apple-system,sans-serif" font-size="10" fill="#f0883e" text-anchor="middle">Mongoose</text>
+
+  <!-- Database Box -->
+  <g filter="url(#shadow)">
+    <rect x="650" y="105" width="200" height="330" fill="#161b22" stroke="#d29922" stroke-width="2" rx="8"/>
+    <rect x="650" y="105" width="200" height="38" fill="#d29922" rx="8"/>
+    <text x="750" y="130" font-family="-apple-system,sans-serif" font-size="15" font-weight="700" fill="#fff" text-anchor="middle">Database (MongoDB)</text>
+
+    <rect x="665" y="155" width="170" height="52" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="750" y="177" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Users Collection</text>
+    <text x="750" y="195" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">name, role, isActive, auth</text>
+
+    <rect x="665" y="220" width="170" height="52" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="750" y="242" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Doctors Collection</text>
+    <text x="750" y="260" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">user, spec, hospital, slots</text>
+
+    <rect x="665" y="285" width="170" height="52" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="750" y="307" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Appointments</text>
+    <text x="750" y="325" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">status, date, timeSlot index</text>
+
+    <rect x="665" y="350" width="170" height="52" fill="#21262d" stroke="#30363d" rx="6"/>
+    <text x="750" y="372" font-family="-apple-system,sans-serif" font-size="12" font-weight="600" fill="#c9d1d9" text-anchor="middle">Reviews Collection</text>
+    <text x="750" y="390" font-family="-apple-system,sans-serif" font-size="10" fill="#8b949e" text-anchor="middle">patient, doctor, rating, 1:1</text>
+  </g>
+</svg>

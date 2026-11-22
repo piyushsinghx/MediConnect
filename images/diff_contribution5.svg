@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 340" width="100%" height="100%">
+  <rect width="850" height="340" fill="#0d1117" rx="8" stroke="#30363d" stroke-width="1.5"/>
+  <rect x="0" y="0" width="850" height="38" fill="#161b22" rx="8"/>
+  <text x="25" y="24" font-family="monospace" font-size="12" fill="#c9d1d9">frontend/src/app/appointments/page.tsx (Rate Doctor &amp; Modal Integration)</text>
+
+  <rect x="0" y="38" width="850" height="24" fill="#30363d" opacity="0.3"/>
+  <text x="25" y="54" font-family="monospace" font-size="11" fill="#8b949e">@@ -230,12 +230,22 @@ function AppointmentsContent() {</text>
+
+  <rect x="0" y="65" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="80" font-family="monospace" font-size="11" fill="#3fb950">+ {appt.status === 'completed' &amp;&amp; (</text>
+
+  <rect x="0" y="87" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="102" font-family="monospace" font-size="11" fill="#3fb950">+   reviewedApptIds.has(appt._id) ? (</text>
+
+  <rect x="0" y="109" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="124" font-family="monospace" font-size="11" fill="#3fb950">+     &lt;span className="badge badge-success"&gt;★ Reviewed&lt;/span&gt;</text>
+
+  <rect x="0" y="131" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="146" font-family="monospace" font-size="11" fill="#3fb950">+   ) : (</text>
+
+  <rect x="0" y="153" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="168" font-family="monospace" font-size="11" fill="#3fb950">+     &lt;button className="btn btn-sm btn-outline" onClick={() =&gt; setReviewModal(appt)}&gt;</text>
+
+  <rect x="0" y="175" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="190" font-family="monospace" font-size="11" fill="#3fb950">+       ★ Rate Doctor</text>
+
+  <rect x="0" y="197" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="212" font-family="monospace" font-size="11" fill="#3fb950">+     &lt;/button&gt;</text>
+
+  <rect x="0" y="219" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="234" font-family="monospace" font-size="11" fill="#3fb950">+   )</text>
+
+  <rect x="0" y="241" width="850" height="22" fill="#2ea043" opacity="0.15"/>
+  <text x="25" y="256" font-family="monospace" font-size="11" fill="#3fb950">+ )}</text>
+</svg>
